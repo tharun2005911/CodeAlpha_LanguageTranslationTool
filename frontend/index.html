@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Language Translation Tool</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Language Translation Tool</h1>
+
+        <p class="subtitle">
+            Translate text quickly and easily
+        </p>
+
+        <textarea
+            id="inputText"
+            placeholder="Enter text to translate..."
+        ></textarea>
+
+
+        <div class="language-container">
+
+            <div class="language-box">
+
+                <label for="sourceLanguage">
+                    From
+                </label>
+
+                <select id="sourceLanguage">
+                </select>
+
+            </div>
+
+
+            <button
+                id="swapButton"
+                class="swap-button"
+            >
+                Swap
+            </button>
+
+
+            <div class="language-box">
+
+                <label for="targetLanguage">
+                    To
+                </label>
+
+                <select id="targetLanguage">
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <button id="translateButton">
+            Translate
+        </button>
+
+
+        <h3>Translation</h3>
+
+        <div id="translationResult">
+            Your translation will appear here...
+        </div>
+
+
+        <button id="copyButton">
+            Copy Translation
+        </button>
+
+        <button id="speakButton">
+            Speak Translation
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
